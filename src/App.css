@@ -1,0 +1,23 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+.Header {
+  font-size: 48px;
+  font-weight: bolder;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.Main {
+  margin: 20px 0px;
+  width: 90vw;
+  min-height: 100vh;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  background-color: aliceblue;
+}
