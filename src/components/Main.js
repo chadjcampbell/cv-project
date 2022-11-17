@@ -1,4 +1,4 @@
-import Education from "../Education";
+import Education from "./Education";
 import Experience from "./Experience";
 import Personal from "./Personal";
 
