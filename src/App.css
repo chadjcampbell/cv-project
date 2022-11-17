@@ -32,6 +32,13 @@ form {
   justify-content: center;
 }
 
+.eduSection,
+.expSection {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 100%;
+}
+
 input,
 textarea {
   margin: 10px;
@@ -39,7 +46,7 @@ textarea {
   border: none;
   border-radius: 5px;
   padding: 5px;
-  width: 80vw;
+  min-width: 70vw;
 }
 
 textarea {
@@ -53,4 +60,31 @@ textarea {
   align-items: center;
   justify-content: center;
   width: 80%;
+}
+
+button {
+  margin: 10px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 18px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease-in-out;
+}
+
+.deleteBtn {
+  background-color: red;
+}
+
+.addBtn {
+  width: 100px;
+  height: 80px;
+  background-color: blue;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

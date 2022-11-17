@@ -6,7 +6,9 @@ function Main() {
   return (
     <div className="Main">
       <Personal />
+      <hr />
       <Experience />
+      <hr />
       <Education />
     </div>
   );
