@@ -24,8 +24,23 @@
   background-color: aliceblue;
 }
 
-.Preview > h2 {
-  padding: 50px;
+.previewContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.printContainer {
+  padding: 25px;
+}
+
+h3 {
+  margin: 15px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
 }
 
 .section,

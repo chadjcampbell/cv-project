@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
+import ComponentToPrint from "./ComponentToPrint";
 
 function Preview() {
   const componentRef = useRef();
@@ -8,9 +9,10 @@ function Preview() {
   });
 
   return (
-    <div>
-      <div className="Preview" ref={componentRef}>
-        <h2>This is a test </h2>
+    <div className="previewContainer">
+      <div className="Preview">
+        <h3>Print Preview</h3>
+        <ComponentToPrint ref={componentRef} />
       </div>
       <button className="printBtn" onClick={handlePrint}>
         Print
