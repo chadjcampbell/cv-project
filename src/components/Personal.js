@@ -1,14 +1,46 @@
-function Personal() {
+function Personal({ addPersonalInfo }) {
+  function handleChange(event) {
+    addPersonalInfo(event.target.name, event.target.value);
+  }
   return (
     <div className="Personal section">
       <h2>Personal Info</h2>
       <form autoComplete="on">
-        <input placeholder="First Name" type="text" name="fname"></input>
-        <input placeholder="Last Name" type="text" name="lname"></input>
-        <input placeholder="Address" type="text" name="address"></input>
-        <input placeholder="Phone Number" type="tel"></input>
-        <input placeholder="E-mail" type="email"></input>
-        <textarea placeholder="Bio"></textarea>
+        <input
+          onChange={handleChange}
+          placeholder="First Name"
+          type="text"
+          name="fname"
+        ></input>
+        <input
+          onChange={handleChange}
+          placeholder="Last Name"
+          type="text"
+          name="lname"
+        ></input>
+        <input
+          onChange={handleChange}
+          placeholder="Address"
+          type="text"
+          name="address"
+        ></input>
+        <input
+          onChange={handleChange}
+          placeholder="Phone Number"
+          type="tel"
+          name="number"
+        ></input>
+        <input
+          onChange={handleChange}
+          placeholder="E-mail"
+          type="email"
+          name="email"
+        ></input>
+        <textarea
+          onChange={handleChange}
+          placeholder="Bio"
+          name="bio"
+        ></textarea>
       </form>
     </div>
   );

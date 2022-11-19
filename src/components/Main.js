@@ -2,10 +2,10 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Personal from "./Personal";
 
-function Main() {
+function Main({ addPersonalInfo }) {
   return (
     <div className="Main">
-      <Personal />
+      <Personal addPersonalInfo={addPersonalInfo} />
       <hr />
       <Experience />
       <hr />
