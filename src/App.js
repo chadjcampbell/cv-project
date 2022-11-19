@@ -4,17 +4,8 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Preview from "./components/Preview";
 
-const initialPersonalInfo = {
-  fname: "",
-  lname: "",
-  address: "",
-  number: "",
-  email: "",
-  bio: "",
-};
-
 function App() {
-  const [personalInfo, setPersonalInfo] = useState(initialPersonalInfo);
+  const [personalInfo, setPersonalInfo] = useState({});
 
   function addPersonalInfo(key, info) {
     setPersonalInfo({ ...personalInfo, [`${key}`]: info });
