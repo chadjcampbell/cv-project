@@ -11,7 +11,7 @@ const ComponentToPrint = forwardRef(function ComponentToPrint(
       <h3>{personalInfo.number}</h3>
       <h3>{personalInfo.email}</h3>
       <h4>{personalInfo.address}</h4>
-      <h4>{personalInfo.bio}</h4>
+      <h5>{personalInfo.bio}</h5>
     </div>
   );
 });
