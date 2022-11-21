@@ -7,6 +7,7 @@ function Main({
   experience,
   addExperience,
   deleteExperience,
+  changeExperience,
 }) {
   return (
     <div className="Main">
@@ -16,6 +17,7 @@ function Main({
         experience={experience}
         addExperience={addExperience}
         deleteExperience={deleteExperience}
+        changeExperience={changeExperience}
       />
       <hr />
       <Education />

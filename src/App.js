@@ -31,6 +31,16 @@ function App() {
     setExperience(experience.filter((exp) => exp.id !== id));
   }
 
+  function changeExperience(id, key, info) {
+    const newState = experience.map((exp) => {
+      if (exp.id === id) {
+        return { ...exp, [`${key}`]: info };
+      }
+      return exp;
+    });
+    setExperience(newState);
+  }
+
   return (
     <div className="App">
       <Header />
@@ -39,6 +49,7 @@ function App() {
         experience={experience}
         addExperience={addExperience}
         deleteExperience={deleteExperience}
+        changeExperience={changeExperience}
       />
       <Preview personalInfo={personalInfo} experience={experience} />
     </div>

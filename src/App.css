@@ -74,6 +74,10 @@ textarea {
   height: 100px;
 }
 
+h2 {
+  font-style: italic;
+}
+
 .dates {
   display: flex;
   flex-wrap: wrap;
@@ -111,4 +115,38 @@ button:hover {
 
 .printBtn {
   background-color: green;
+}
+
+.personalPrintSection {
+  padding: 15px 50px;
+  border-radius: 15px;
+  background-color: beige;
+}
+
+.expPrintSection {
+  border-radius: 15px;
+  padding: 5px;
+  background-color: beige;
+  padding-left: 50px;
+  margin: 5px;
+}
+
+.namePrintContainer {
+  display: flex;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: rgb(176, 215, 247);
+  min-width: 250px;
+  max-width: 450px;
+}
+
+.namePrintContainer > * {
+  margin: 5px;
+}
+
+.printH2 {
+  margin: 15px 50px;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: rgb(176, 215, 247);
 }
