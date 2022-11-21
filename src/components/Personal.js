@@ -1,6 +1,6 @@
-function Personal({ addPersonalInfo }) {
+function Personal({ changePersonalInfo }) {
   function handleChange(event) {
-    addPersonalInfo(event.target.name, event.target.value);
+    changePersonalInfo(event.target.name, event.target.value);
   }
   return (
     <div className="Personal section">
