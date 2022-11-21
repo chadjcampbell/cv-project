@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 
 const ComponentToPrint = forwardRef(function ComponentToPrint(
-  { personalInfo },
+  { personalInfo, experience },
   ref
 ) {
   return (
@@ -12,6 +12,7 @@ const ComponentToPrint = forwardRef(function ComponentToPrint(
       <h3>{personalInfo.email}</h3>
       <h4>{personalInfo.address}</h4>
       <h5>{personalInfo.bio}</h5>
+      <h4>{experience}</h4>
     </div>
   );
 });
