@@ -1,9 +1,13 @@
 import { useState } from "react";
 
-function ExpSection({ index, handleDelete }) {
+function ExpSection({ id, handleDelete }) {
+  id += 1;
   return (
-    <section key={index} className="expSection">
-      <button onClick={() => handleDelete(index)} className="deleteBtn">
+    <section id={id} className="expSection">
+      <button
+        onClick={(event) => handleDelete(event, id)}
+        className="deleteBtn"
+      >
         Delete
       </button>
       <form autoComplete="off">
@@ -24,20 +28,24 @@ function ExpSection({ index, handleDelete }) {
 }
 
 function Experience() {
-  const [inputs, setInputs] = useState([]);
-  function handleDelete(key) {
-    setInputs(inputs.filter((inputs) => inputs.key !== key));
+  const [inputs, setInputs] = useState([ExpSection]);
+  function handleDelete(event, id) {
+    let num = event.target.parentNode.id;
+    setInputs(inputs.filter((input) => input.id !== num));
   }
   return (
     <div className="Experience section">
       <h2>Experience</h2>
       <div className="expContainer">
-        {inputs.map((ExpSection, index) => (
-          <ExpSection key={index} handleDelete={handleDelete} />
+        {inputs.map((ExpSection, id) => (
+          <ExpSection key={id} id={id} handleDelete={handleDelete} />
         ))}
       </div>
       <button
-        onClick={() => setInputs([...inputs, ExpSection])}
+        onClick={() => {
+          console.log(inputs);
+          setInputs([...inputs, ExpSection]);
+        }}
         className="addBtn"
       >
         Add Another Company
