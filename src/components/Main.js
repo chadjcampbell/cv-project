@@ -8,6 +8,9 @@ function Main({
   addExperience,
   deleteExperience,
   changeExperience,
+  education,
+  addEducation,
+  deleteEducation,
 }) {
   return (
     <div className="Main">
@@ -20,7 +23,11 @@ function Main({
         changeExperience={changeExperience}
       />
       <hr />
-      <Education />
+      <Education
+        education={education}
+        addEducation={addEducation}
+        deleteEducation={deleteEducation}
+      />
     </div>
   );
 }

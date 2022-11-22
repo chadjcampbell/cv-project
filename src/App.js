@@ -16,8 +16,21 @@ function App() {
       jobDesc: "",
     };
   }
+
+  function newEducation() {
+    return {
+      id: uuid(),
+      school: "",
+      start: "",
+      end: "",
+      degree: "",
+      study: "",
+    };
+  }
+
   const [personalInfo, setPersonalInfo] = useState({});
   const [experience, setExperience] = useState([newExperience()]);
+  const [education, setEducation] = useState([newEducation()]);
 
   function changePersonalInfo(key, info) {
     setPersonalInfo({ ...personalInfo, [`${key}`]: info });
@@ -41,6 +54,14 @@ function App() {
     setExperience(newState);
   }
 
+  function addEducation() {
+    setEducation([...education, newEducation()]);
+  }
+
+  function deleteEducation(id) {
+    setEducation(education.filter((edu) => edu.id !== id));
+  }
+
   return (
     <div className="App">
       <Header />
@@ -50,8 +71,15 @@ function App() {
         addExperience={addExperience}
         deleteExperience={deleteExperience}
         changeExperience={changeExperience}
+        education={education}
+        addEducation={addEducation}
+        deleteEducation={deleteEducation}
       />
-      <Preview personalInfo={personalInfo} experience={experience} />
+      <Preview
+        personalInfo={personalInfo}
+        experience={experience}
+        education={education}
+      />
     </div>
   );
 }
