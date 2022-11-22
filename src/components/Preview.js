@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 import ComponentToPrint from "./ComponentToPrint";
 
-function Preview({ personalInfo, experience }) {
+function Preview({ personalInfo, experience, education }) {
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
@@ -15,6 +15,7 @@ function Preview({ personalInfo, experience }) {
         <ComponentToPrint
           personalInfo={personalInfo}
           experience={experience}
+          education={education}
           ref={componentRef}
         />
       </div>

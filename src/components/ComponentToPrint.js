@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 
 const ComponentToPrint = forwardRef(function ComponentToPrint(
-  { personalInfo, experience },
+  { personalInfo, experience, education },
   ref
 ) {
   return (
@@ -26,6 +26,17 @@ const ComponentToPrint = forwardRef(function ComponentToPrint(
             {exp.start} - {exp.end}
           </h5>
           <p>{exp.jobDesc}</p>
+        </div>
+      ))}
+      <h2 className="printH2">Education</h2>
+      {education.map((edu) => (
+        <div key={edu.id} className="expPrintSection">
+          <h3>{edu.school}</h3>
+          <h4>{edu.degree}</h4>
+          <h5>
+            {edu.start} - {edu.end}
+          </h5>
+          <p>{edu.study}</p>
         </div>
       ))}
     </div>

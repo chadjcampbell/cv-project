@@ -1,4 +1,9 @@
-function Education({ education, addEducation, deleteEducation }) {
+function Education({
+  education,
+  addEducation,
+  deleteEducation,
+  changeEducation,
+}) {
   return (
     <div className="Education section">
       <h2>Education</h2>
@@ -8,17 +13,51 @@ function Education({ education, addEducation, deleteEducation }) {
             Delete
           </button>
           <form autoComplete="off">
-            <input placeholder="School Name" type="text" name="school"></input>
+            <input
+              onChange={(event) =>
+                changeEducation(edu.id, event.target.name, event.target.value)
+              }
+              placeholder="School Name"
+              type="text"
+              name="school"
+            ></input>
             <div className="dates">
               <label htmlFor="start">Start date:</label>
-              <input type="date" id="start" name="start"></input>
+              <input
+                onChange={(event) =>
+                  changeEducation(edu.id, event.target.name, event.target.value)
+                }
+                type="date"
+                id="start"
+                name="start"
+              ></input>
             </div>
             <div className="dates">
               <label htmlFor="end">End date:</label>
-              <input type="date" id="end" name="end"></input>
+              <input
+                onChange={(event) =>
+                  changeEducation(edu.id, event.target.name, event.target.value)
+                }
+                type="date"
+                id="end"
+                name="end"
+              ></input>
             </div>
-            <input placeholder="Degree Type" type="text" name="degree"></input>
-            <textarea name="study" placeholder="Areas of Study"></textarea>
+            <input
+              onChange={(event) =>
+                changeEducation(edu.id, event.target.name, event.target.value)
+              }
+              placeholder="Degree Type"
+              type="text"
+              name="degree"
+            ></input>
+            <textarea
+              onChange={(event) =>
+                changeEducation(edu.id, event.target.name, event.target.value)
+              }
+              name="study"
+              placeholder="Areas of Study"
+            ></textarea>
           </form>
         </section>
       ))}

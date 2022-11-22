@@ -62,6 +62,16 @@ function App() {
     setEducation(education.filter((edu) => edu.id !== id));
   }
 
+  function changeEducation(id, key, info) {
+    const newState = education.map((edu) => {
+      if (edu.id === id) {
+        return { ...edu, [`${key}`]: info };
+      }
+      return edu;
+    });
+    setEducation(newState);
+  }
+
   return (
     <div className="App">
       <Header />
@@ -74,6 +84,7 @@ function App() {
         education={education}
         addEducation={addEducation}
         deleteEducation={deleteEducation}
+        changeEducation={changeEducation}
       />
       <Preview
         personalInfo={personalInfo}

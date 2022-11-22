@@ -11,6 +11,7 @@ function Main({
   education,
   addEducation,
   deleteEducation,
+  changeEducation,
 }) {
   return (
     <div className="Main">
@@ -27,6 +28,7 @@ function Main({
         education={education}
         addEducation={addEducation}
         deleteEducation={deleteEducation}
+        changeEducation={changeEducation}
       />
     </div>
   );
