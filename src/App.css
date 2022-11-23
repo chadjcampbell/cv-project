@@ -169,3 +169,9 @@ button:hover {
   padding: 5px;
   background-color: rgb(176, 215, 247);
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Preview from "./components/Preview";
+import Footer from "./components/Footer";
 import uuid from "react-uuid";
 import example from "./example";
 
@@ -115,6 +116,7 @@ function App() {
         experience={experience}
         education={education}
       />
+      <Footer />
     </div>
   );
 }
