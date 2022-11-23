@@ -8,8 +8,8 @@ const ComponentToPrint = forwardRef(function ComponentToPrint(
     <div ref={ref} className="printContainer">
       <div className="personalPrintSection">
         <div className="namePrintContainer">
-          <h1>{personalInfo.fname}</h1>
-          <h1>{personalInfo.lname}</h1>
+          <h2>{personalInfo.fname}</h2>
+          <h2>{personalInfo.lname}</h2>
         </div>
         <h3>{personalInfo.number}</h3>
         <h3>{personalInfo.email}</h3>

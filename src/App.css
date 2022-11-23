@@ -37,6 +37,10 @@
   padding: 25px;
 }
 
+.previewContainer * {
+  margin-top: 0px;
+}
+
 .previewHeader {
   margin: 15px;
   padding: 5px;
@@ -117,6 +121,13 @@ button {
   background-color: red;
 }
 
+.loadExample {
+  padding: 15px;
+  width: auto;
+  height: auto;
+  background-color: rgb(102, 143, 255);
+}
+
 button:hover {
   cursor: pointer;
   transform: scale(1.1);
@@ -127,17 +138,16 @@ button:hover {
 }
 
 .personalPrintSection {
-  padding: 15px 50px;
+  padding: 5px 20px;
   border-radius: 15px;
   background-color: beige;
 }
 
 .expPrintSection {
   border-radius: 15px;
-  padding: 5px;
+  padding: 2px;
   background-color: beige;
   padding-left: 50px;
-  margin: 5px;
 }
 
 .namePrintContainer {
@@ -150,12 +160,12 @@ button:hover {
 }
 
 .namePrintContainer > * {
-  margin: 5px;
+  margin: 2px;
 }
 
 .printH2 {
-  margin: 15px 50px;
+  margin: 5px 10px;
   border-radius: 15px;
-  padding: 15px;
+  padding: 5px;
   background-color: rgb(176, 215, 247);
 }

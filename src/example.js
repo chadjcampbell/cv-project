@@ -21,7 +21,7 @@ function example() {
         end: stringDate,
         title: "Internet Sales Manager",
         jobDesc:
-          "Tasked with getting online customers into the dealership for a test drive. Without the personal connection of a face-to-face interaction, this position can be even more challenging than selling cars in the store. Manage customer leads, responding to all inquiries in a quick and timely manner. Answer customer questions on product inventory, helping people find the best car for their needs, and explaining the benefits of the vehicles.",
+          "Generating leads and placing ads to promote the dealership. Manage leads, responding to inquiries in a quick and timely manner. Answer questions on product inventory, helping people find the best car for their needs, and explaining the benefits of the vehicles.",
       },
       {
         id: uuid(),
@@ -30,7 +30,7 @@ function example() {
         end: "2013-12-15",
         title: "Store Manager",
         jobDesc:
-          "Manage and motivate a team to increase sales and ensure efficiency. Manage stock levels and make key decisions about stock control. Analyse sales figures and forecast future sales. Used information technology to record sales figures, analyse data and forward plan. Dealt with staffing issues such as interviewing potential staff, conducting appraisals and performance reviews. Also provided or organised training and development.",
+          "Manage and motivate a team to increase sales and ensure efficiency. Manage stock levels and make key decisions about stock control. Analyse sales figures and forecast future sales. Used information technology to record sales figures, analyse data and forward plan. Also provided or organised training and development.",
       },
     ],
     education: [
