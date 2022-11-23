@@ -1,4 +1,4 @@
-You can view a live demo [HERE](https://chadjcampbell.github.io/cv-project/)
+## You can view a live demo [HERE](https://chadjcampbell.github.io/cv-project/)
 
 # Getting Started with Create React App
 
