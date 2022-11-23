@@ -175,3 +175,46 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+.footerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerText * {
+  margin: 15px;
+}
+
+.footerText2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 40px;
+  height: 40px;
+}
+
+.gitIcon {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.gitIcon:hover {
+  animation: loader 1s;
+}
+
+@keyframes loader {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    border-radius: 50%;
+    rotate: 360deg;
+  }
+}
