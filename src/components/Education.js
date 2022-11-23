@@ -20,6 +20,7 @@ function Education({
               placeholder="School Name"
               type="text"
               name="school"
+              value={edu.school}
             ></input>
             <div className="dates">
               <label htmlFor="start">Start date:</label>
@@ -30,6 +31,7 @@ function Education({
                 type="date"
                 id="start"
                 name="start"
+                value={edu.start}
               ></input>
             </div>
             <div className="dates">
@@ -41,6 +43,7 @@ function Education({
                 type="date"
                 id="end"
                 name="end"
+                value={edu.end}
               ></input>
             </div>
             <input
@@ -50,12 +53,14 @@ function Education({
               placeholder="Degree Type"
               type="text"
               name="degree"
+              value={edu.degree}
             ></input>
             <textarea
               onChange={(event) =>
                 changeEducation(edu.id, event.target.name, event.target.value)
               }
               name="study"
+              value={edu.study}
               placeholder="Areas of Study"
             ></textarea>
           </form>

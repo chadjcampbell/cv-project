@@ -28,6 +28,7 @@ function Experience({
                 placeholder="Company Name"
                 type="text"
                 name="company"
+                value={exp.company}
               ></input>
               <div className="dates">
                 <label htmlFor="start">Start date:</label>
@@ -42,6 +43,7 @@ function Experience({
                   type="date"
                   id="start"
                   name="start"
+                  value={exp.start}
                 ></input>
               </div>
               <div className="dates">
@@ -57,6 +59,7 @@ function Experience({
                   type="date"
                   id="end"
                   name="end"
+                  value={exp.end}
                 ></input>
               </div>
               <input
@@ -70,6 +73,7 @@ function Experience({
                 placeholder="Last Title"
                 type="text"
                 name="title"
+                value={exp.title}
               ></input>
               <textarea
                 onChange={(event) =>
@@ -81,6 +85,7 @@ function Experience({
                 }
                 placeholder="Job Description"
                 name="jobDesc"
+                value={exp.jobDesc}
               ></textarea>
             </form>
           </section>

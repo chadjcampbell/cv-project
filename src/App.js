@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Preview from "./components/Preview";
 import uuid from "react-uuid";
+import example from "./example";
 
 function App() {
   function newPersonal() {
@@ -88,9 +89,15 @@ function App() {
     setEducation([newEducation()]);
   }
 
+  function loadExample() {
+    setPersonalInfo(example().personal);
+    setExperience(example().experience);
+    setEducation(example().education);
+  }
+
   return (
     <div className="App">
-      <Header resetForm={resetForm} />
+      <Header resetForm={resetForm} loadExample={loadExample} />
       <Main
         personalInfo={personalInfo}
         changePersonalInfo={changePersonalInfo}
