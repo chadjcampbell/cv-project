@@ -3,6 +3,7 @@ import Experience from "./Experience";
 import Personal from "./Personal";
 
 function Main({
+  personalInfo,
   changePersonalInfo,
   experience,
   addExperience,
@@ -15,7 +16,10 @@ function Main({
 }) {
   return (
     <div className="Main">
-      <Personal changePersonalInfo={changePersonalInfo} />
+      <Personal
+        personalInfo={personalInfo}
+        changePersonalInfo={changePersonalInfo}
+      />
       <hr />
       <Experience
         experience={experience}

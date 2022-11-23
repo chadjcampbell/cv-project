@@ -6,6 +6,16 @@ import Preview from "./components/Preview";
 import uuid from "react-uuid";
 
 function App() {
+  function newPersonal() {
+    return {
+      fname: "",
+      lname: "",
+      address: "",
+      number: "",
+      email: "",
+      bio: "",
+    };
+  }
   function newExperience() {
     return {
       id: uuid(),
@@ -28,7 +38,7 @@ function App() {
     };
   }
 
-  const [personalInfo, setPersonalInfo] = useState({});
+  const [personalInfo, setPersonalInfo] = useState(newPersonal());
   const [experience, setExperience] = useState([newExperience()]);
   const [education, setEducation] = useState([newEducation()]);
 
@@ -72,10 +82,17 @@ function App() {
     setEducation(newState);
   }
 
+  function resetForm() {
+    setPersonalInfo(newPersonal());
+    setExperience([newExperience()]);
+    setEducation([newEducation()]);
+  }
+
   return (
     <div className="App">
-      <Header />
+      <Header resetForm={resetForm} />
       <Main
+        personalInfo={personalInfo}
         changePersonalInfo={changePersonalInfo}
         experience={experience}
         addExperience={addExperience}
